@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="light" style="scroll-behavior: smooth">
 
 <head>
     <meta charset="UTF-8">
@@ -69,45 +69,45 @@
             <h2 class="pt-[180px] text-center text-white text-5xl lg:text-7xl font-extrabold leading-[70px]">End-to-End
                 Travel
                 with</h2>
-                <h2 class="text-[#1DD100] text-center text-5xl lg:text-7xl font-extrabold lg:pt-4">P Paribahan</h2>
-                <p class="text-center text-[#ffffff] pt-6">Yes, you can run unit tests and view the results directly
-                    within the
-                    app. The<br>integrated testing features allow for a streamlined.</p>
-                <div class="text-center pt-8">
-                    <a href="" class="btn px-6 bg-[#1DD100] text-[20px] font-bold border-none">Buy Tickets</a>
-                </div>
+            <h2 class="text-[#1DD100] text-center text-5xl lg:text-7xl font-extrabold lg:pt-4">P Paribahan</h2>
+            <p class="text-center text-[#ffffff] pt-6">Yes, you can run unit tests and view the results directly
+                within the
+                app. The<br>integrated testing features allow for a streamlined.</p>
+            <div class="text-center pt-8">
+                <a href="#ticketing" class="btn px-6 bg-[#1DD100] text-[20px] font-bold border-none">Buy Tickets</a>
+            </div>
 
-                <div class="flex justify-center pt-[190px] gap-6 bonus-part-banner font-inter">
-                    <div class="flex border-b-[3px] border-[#1DD100] py-8 pl-8 pr-14 rounded-3xl bg-white gap-4">
-                        <img src="./images/people.png" class="size-max" alt="#">
-                        <div>
-                            <h1 class="text-[#030712] text-[36px] font-bold">500K+</h1>
-                            <p class=" text-[18px] font-light">Registered users</p>
-                        </div>
-                    </div>
-     
-                    <div class="flex border-b-[3px] border-[#1DD100] py-8 pl-8 pr-14 rounded-3xl bg-white gap-4">
-                        <img src="./images/ticket-cupon.png" class="size-max" alt="#">
-                        <div>
-                            <h1 class="text-[#030712] text-[36px] font-bold">1.7 lacks</h1>
-                            <p class="text-[#030712] text-[18px] font-light">Tickets sold</p>
-                        </div>
-                    </div>
-
-                    <div class="flex border-b-[3px] border-[#1DD100] py-8 pl-8 pr-14 rounded-3xl bg-white gap-4">
-                        <img src="./images/stoppage.png" class="size-max" alt="#">
-                        <div>
-                            <h1 class="text-[#030712] text-[36px] font-bold">80K+</h1>
-                            <p class="text-[#030712] text-[18px] font-light">Rental partners</p>
-                        </div>
+            <div class="flex justify-center pt-[190px] gap-6 bonus-part-banner font-inter">
+                <div class="flex border-b-[3px] border-[#1DD100] py-8 pl-8 pr-14 rounded-3xl bg-white gap-4">
+                    <img src="./images/people.png" class="size-max" alt="#">
+                    <div>
+                        <h1 class="text-[#030712] text-[36px] font-bold">500K+</h1>
+                        <p class=" text-[18px] font-light">Registered users</p>
                     </div>
                 </div>
 
-                
+                <div class="flex border-b-[3px] border-[#1DD100] py-8 pl-8 pr-14 rounded-3xl bg-white gap-4">
+                    <img src="./images/ticket-cupon.png" class="size-max" alt="#">
+                    <div>
+                        <h1 class="text-[#030712] text-[36px] font-bold">1.7 lacks</h1>
+                        <p class="text-[#030712] text-[18px] font-light">Tickets sold</p>
+                    </div>
+                </div>
+
+                <div class="flex border-b-[3px] border-[#1DD100] py-8 pl-8 pr-14 rounded-3xl bg-white gap-4">
+                    <img src="./images/stoppage.png" class="size-max" alt="#">
+                    <div>
+                        <h1 class="text-[#030712] text-[36px] font-bold">80K+</h1>
+                        <p class="text-[#030712] text-[18px] font-light">Rental partners</p>
+                    </div>
+                </div>
+            </div>
+
+
         </div>
-         
+
     </header>
-    <main>
+    <main id="main">
         <section class="mx-4  lg:mx-[135px] mt-[180px]">
             <h1 class="text-5xl font-bold text-center">Best offers for you</h1>
 
@@ -161,7 +161,7 @@
             </div>
         </section>
 
-        <section class="mt-[120px] bg-[#F7F8F8]"
+        <section id="ticketing" class="mt-[120px] bg-[#F7F8F8]"
             style="border-radius: 88px 88px 0px 0px; border-top: 2px solid #1DD100;">
             <h1 class="text-5xl font-bold text-center pt-[120px]">P.H. Paribahan</h1>
             <p class="text-center pt-4 text-lg">Yes, you can run unit tests and view the results directly within the
@@ -190,7 +190,7 @@
                             <div>
                                 <button
                                     class="bg-[#1dd10026] text-[#1DD100] px-4 py-3 rounded-xl font-inter font-medium"><i
-                                        class="fa-solid fa-couch"></i>  <span>40</span>
+                                        class="fa-solid fa-couch"></i>  <span id="seats-left">40</span>
                                     Seats Left</button>
                             </div>
                         </div>
@@ -244,7 +244,7 @@
                         </div>
                     </div>
 
-                    <div class="flex overflow-x-scroll lg:overflow-auto">
+                    <div id="all-seats" class="flex overflow-x-scroll lg:overflow-auto">
                         <div
                             class="text-[#030712] opacity-50 mt-32 flex flex-col gap-9 lg:gap-[55px] items-center justify-center">
                             <p class="font-medium text-lg font-inter">A</p>
@@ -367,67 +367,85 @@
 
                         <div class="bg-[#F7F8F8] p-8 rounded-xl">
                             <div class="flex justify-around mt-4 border-b-2 border-dashed pb-4">
-                                <h4 class="font-inter font-semibold">Seat <span
+                                <h4 class="font-inter font-semibold">Seat <span id="seat-count"
                                         class="bg-[#1DD100] px-3 rounded-xl text-white">0</span>
                                 </h4>
                                 <h4 class="font-inter font-semibold">Class</h4>
                                 <h4 class="font-inter font-semibold">Price</h4>
                             </div>
 
-                            <!-- total price -->
+                            <div id="seat-detail1" class="flex justify-around font-inter mt-4 hidden">
+                                <p></p>
+                                <p>Economy</p>
+                                <p>550</p>
+                            </div>
+                            <div id="seat-detail2" class="flex justify-around font-inter mt-4 hidden">
+                                <p></p>
+                                <p>Economy</p>
+                                <p>550</p>
+                            </div>
+                            <div id="seat-detail3" class="flex justify-around font-inter mt-4 hidden">
+                                <p></p>
+                                <p>Economy</p>
+                                <p>550</p>
+                            </div>
+                            <div id="seat-detail4" class="flex justify-around font-inter mt-4 hidden">
+                                <p></p>
+                                <p>Economy</p>
+                                <p>550</p>
+                            </div>
+
                             <div
                                 class="flex font-semibold justify-between mt-6 border-t-2 border-solid pt-4  text-black font-inter">
                                 <p>Total Price</p>
-                                <p>BDT <span>0</span></p>
+                                <p>BDT <span id="totalPrice">0</span></p>
                             </div>
 
-                            <div
-                                class="hidden font-medium justify-between mt-6 border-t-2 border-dashed pt-4  text-black font-inter">
+                            <div id="discount"
+                                class="hidden flex justify-between mt-6 border-t-2 border-dashed pt-4 font-medium text-black font-inter">
                                 <p>Discount</p>
-                                <p>BDT <span>0</span></p>
+                                <p>BDT <span id="discountPrice">0</span></p>
                             </div>
 
-                            <label class="input py-8 flex flex-col lg:flex-row items-center gap-2 mt-8 decoration-none">
-                                <input type="text" class="lg:grow" placeholder="Have any coupon?" />
-                                <button disabled
+                            <label id="apply-section"
+                                class="input py-8 flex flex-col lg:flex-row items-center gap-2 mt-8 decoration-none">
+                                <input id="coupon" type="text" class="lg:grow" placeholder="Have any coupon?" />
+                                <button disabled id="apply-btn"
                                     class="rounded-2xl text-white bg-gray-300 px-3 lg:px-7 text-[16px] font-semibold py-3 my-4">Apply</button>
                             </label>
                             <div class="flex justify-between mt-12 lg:mt-4 pt-4 font-semibold text-black font-inter">
                                 <p>Grand Total</p>
-                                <p>BDT <span>0</span></p>
+                                <p>BDT <span id="grandPrice">0</span></p>
                             </div>
 
                         </div>
 
                         <form>
-                            <div class="mt-12">
-                                <div>
-                                    <h2 class="font-inter font-semibold">Passenger Name*</h2>
-                                    <label class="input input-bordered py-8  flex items-center gap-2 mt-3">
-                                        <input type="text" class="grow font-inter" placeholder="Enter your name" />
-                                    </label>
-                                </div>
-
-                                <div class="mt-6">
-                                    <h2 class="font-inter font-semibold">Phone Number*</h2>
-                                    <label class="input input-bordered py-8  flex items-center gap-2 mt-3">
-                                        <input required type="number" class="grow font-inter"
-                                            placeholder="Enter your phone number" />
-                                    </label>
-                                </div>
-
-                                <div class="mt-6">
-                                    <h2 class="font-inter font-semibold">Email ID</h2>
-                                    <label class="input input-bordered py-8 flex items-center gap-2 mt-3">
-                                        <input type="text" class="grow font-inter" placeholder="Enter your email id" />
-                                    </label>
-                                </div>
+                            <div class="mt-12 font-inter">
+                              <div>
+                                <h2 class="font-semibold">Passenger Name*</h2>
+                                <label class="input input-bordered py-8  flex items-center gap-2 mt-3">
+                                  <input type="text" class="grow" placeholder="Enter your name" />
+                                </label>
+                              </div>
+              
+                              <div class="mt-6">
+                                <h2 class="font-semibold">Phone Number*</h2>
+                                <label class="input input-bordered py-8  flex items-center gap-2 mt-3">
+                                  <input id="phone" required type="number" class="grow" placeholder="Enter your phone number" />
+                                </label>
+                              </div>
+              
+                              <div class="mt-6">
+                                <h2 class="font-semibold">Email ID</h2>
+                                <label class="input input-bordered py-8 flex items-center gap-2 mt-3">
+                                  <input type="text" class="grow" placeholder="Enter your email id" />
+                                </label>
+                              </div>
                             </div>
-
-                            <a href="" type="submit"
-                                class="w-full bg-gray-300  text-white mt-6 text-xl font-extrabold py-5 rounded-2xl text-center"
-                                disabled>Next</a>
-                        </form>
+              
+                            <a href="#success" id="next-btn" type="submit" class="w-full bg-gray-300  text-white mt-6 text-[20px] font-extrabold py-5 rounded-2xl text-center" disabled>Next</a>
+                          </form>
 
                         <div class="flex justify-center gap-10 text-[#030712] opacity-60 mt-4">
                             <a href="" class="underline">Terms and Conditions</a>
@@ -437,7 +455,7 @@
                 </div>
             </div>
 
-            <!-- footer section -->
+            <!-- footer -->
             <footer class=" bg-black text-white w-full mt-28 p-10">
                 <div class="border-b-2 border-dashed flex gap-6 flex-col lg:flex-row mt-32 justify-between lg: mx-52">
                     <div class="">
@@ -471,5 +489,25 @@
                 </div>
             </footer>
     </main>
+
+    <div id="success" class="flex items-center justify-center h-screen bg-[#fdf9f9] hidden">
+        <div
+            class="w-[718px] h-[481px] bg-white container mx-auto flex flex-col items-center justify-center rounded-2xl">
+            <div class="font-sans">
+                <img src="images/success.png" alt="">
+                <h2 class="text-[#27AE60] font-bold text-2xl mt-6">SUCCESS</h2>
+            </div>
+            <div class="text-center mt-4 font-sans">
+                <h3 class="text-[#4A4A4A] font-medium text-xl">Thank you for Booking Our Bus Seats. <br>
+                    We are working hard to find the best service and deals for you.
+                </h3>
+                <h3 class="text-[#4A4A4A] font-light text-xl mt-3 mb-6">Shortly you will find a confirmation in your
+                    email.</h3>
+            </div>
+            <button id="continue-btn" class="btn bg-[#27AE60] text-white px-24 rounded-3xl font-inter">Continue</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
+
 </html>
